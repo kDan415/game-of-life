@@ -15,10 +15,12 @@ Some initial settings can be changed by editing the constants.
 1) MINIMUM_NUMBER_OF_CELLS allows you to set the minimum field size in cells. The default is 10 by 10.
 2) MINIMUM_CELL_SIZE_IN_PIXELS allows you to change the minimum cell size in pixels.
 3) PADDING_IN_PIXELS allows you to set padding from the edges of the screen when calculating the size of the field in pixels.
+
 When calculating the next step, a classical algorithm is used with enumeration of all cells and counting living cells around each.
 Neighbor counting is performed by the numberOfLivingCellsAround function.
 When out of bounds, this function checks cells from the other end of the field, so the field becomes infinite.
 The playing field is a torus unfolded on a plane.
+In this implementation, it is possible to change the game speed (delay between steps) with the delay slider.
 
 The initial field configuration can be filled with random values or set manually by clicking on the desired cells on the canvas.
 
