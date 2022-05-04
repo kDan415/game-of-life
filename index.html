@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Game of Life</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css"/>
+  <script src="js/gameOfLife.js"></script>
+</head>
+<h1>Game of Life</h1>
+<div id="setting">
+  <div>
+    <label>Horizontal size</label>
+    <br>
+    <input id="xSize" type="range" min="10" max="200" step="1" value="10" onchange="initializeGridSizes()">
+    <br>
+    <label id="lxSize">...</label>
+  </div>
+  <div>
+    <label>Vertical size</label>
+    <br>
+    <input id="ySize" type="range" min="10" max="200" step="1" value="10" onchange="initializeGridSizes()">
+    <br>
+    <label id="lySize">...</label>
+  </div>
+  <div>
+    <label>Cell size</label>
+    <br>
+    <input id="cellSize" type="range" min="10" max="100" step="1" value="100" onchange="initializeCellSizes()">
+    <br>
+    <label id="lCellSize">...</label>
+  </div>
+  <div>
+    <label>Delay</label>
+    <br>
+    <input id="delay" type="range" min="0" max="1000" step="1" onchange="updateSpeed()">
+    <br>
+    <label id="lDelay">...</label>
+  </div>
+</div>
+<br>
+<div id="player">
+  <button id="btnRandom" onclick="drawRandomField()">Random</button>
+  <button id="btnNext" onclick="nextStep()">Next</button>
+  <button id="btnReset" onclick="initializeAll()">Reset</button>
+  <button id="btnPlay" onclick="startTimer()">Play</button>
+  <button id="btnPause" onclick="stopTimer()">Pause</button>
+</div>
+<br>
+<canvas id="game" width="0" height="0"></canvas>
+</html>
