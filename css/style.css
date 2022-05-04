@@ -1,23 +1,28 @@
 label  {
-    font: 12pt/10pt sans-serif;
+    font: 3vh/2vh sans-serif;
+}
+
+input {
+    width: 23vh;
 }
 
 button {
     border: none;
-    border-radius: 5px;
-    padding: 5px 20px;
+    border-radius: 1vh;
+    padding: 0.6vh 2vh;
     background: rgb(255, 166, 0);
     cursor: pointer;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: bolder;
     color: #000000;
+    font: 2.8vh sans-serif;
 }
 button:hover {
     background: #8800ff;
 }
 
 h1 {
-    font: 20pt sans-serif;
+    font: 5vh sans-serif;
     text-align: center;
 }
 
