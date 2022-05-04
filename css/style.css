@@ -3,35 +3,38 @@ label  {
 }
 
 input {
-    width: 23vh;
+    width: 28vh;
 }
 
 button {
     border: none;
     border-radius: 1vh;
-    padding: 0.6vh 2vh;
+    padding: 0.6vh 3vh;
     background: rgb(255, 166, 0);
     cursor: pointer;
     text-transform: uppercase;
     font-weight: bolder;
     color: #000000;
     font: 2.8vh sans-serif;
+    margin-top: 1vh;
 }
 button:hover {
     background: #8800ff;
 }
 
 h1 {
-    font: 5vh sans-serif;
+    font: 24px sans-serif;
     text-align: center;
 }
 
 div {
     text-align: center;
+    margin-top: 1vh;
 }
 
 #setting>div {
     display: inline-block;
+
 }
 
 #game {
