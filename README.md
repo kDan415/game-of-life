@@ -12,6 +12,13 @@ The set of game rules can be changed in the nextStep() function.
 # About the application
 This application automatically calculates the maximum number of cells on the screen and the maximum cell size for a given screen size.
 Some initial settings can be changed by editing the constants.
-MINIMUM_NUMBER_OF_CELLS allows you to set the minimum field size in cells. The default is 10 by 10.
-MINIMUM_CELL_SIZE_IN_PIXELS allows you to change the minimum cell size in pixels.
-PADDING_IN_PIXELS allows you to set padding from the edges of the screen when calculating the size of the field in pixels.
+1) MINIMUM_NUMBER_OF_CELLS allows you to set the minimum field size in cells. The default is 10 by 10.
+2) MINIMUM_CELL_SIZE_IN_PIXELS allows you to change the minimum cell size in pixels.
+3) PADDING_IN_PIXELS allows you to set padding from the edges of the screen when calculating the size of the field in pixels.
+When calculating the next step, a classical algorithm is used with enumeration of all cells and counting living cells around each.
+Neighbor counting is performed by the numberOfLivingCellsAround function.
+When out of bounds, this function checks cells from the other end of the field, so the field becomes infinite.
+The playing field is a torus unfolded on a plane.
+
+
+You can use this code in your project with your own changes or watch the demo directly in the browser using the link: https://kdan415.github.io/game-of-life/
