@@ -20,5 +20,6 @@ Neighbor counting is performed by the numberOfLivingCellsAround function.
 When out of bounds, this function checks cells from the other end of the field, so the field becomes infinite.
 The playing field is a torus unfolded on a plane.
 
+The initial field configuration can be filled with random values or set manually by clicking on the desired cells on the canvas.
 
 You can use this code in your project with your own changes or watch the demo directly in the browser using the link: https://kdan415.github.io/game-of-life/
