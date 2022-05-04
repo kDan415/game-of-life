@@ -9,28 +9,28 @@
 </head>
 <h1>Game of Life</h1>
 <div id="setting">
-  <div>
+  <div class="control">
     <label>Horizontal size</label>
     <br>
     <input id="xSize" type="range" min="10" max="200" step="1" value="10" onchange="initializeGridSizes()">
     <br>
     <label id="lxSize">...</label>
   </div>
-  <div>
+  <div class="control">
     <label>Vertical size</label>
     <br>
     <input id="ySize" type="range" min="10" max="200" step="1" value="10" onchange="initializeGridSizes()">
     <br>
     <label id="lySize">...</label>
   </div>
-  <div>
+  <div class="control">
     <label>Cell size</label>
     <br>
     <input id="cellSize" type="range" min="10" max="100" step="1" value="100" onchange="initializeCellSizes()">
     <br>
     <label id="lCellSize">...</label>
   </div>
-  <div>
+  <div class="control">
     <label>Delay</label>
     <br>
     <input id="delay" type="range" min="0" max="1000" step="1" onchange="updateSpeed()">
