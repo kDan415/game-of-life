@@ -15,7 +15,7 @@ let timerId = null;
 
 // initializer
 window.onload = function () {
-    canvas = document.getElementById('game'); //сделать белый фон
+    canvas = document.getElementById('game');
     context = canvas.getContext("2d");
     xSize = document.getElementById('xSize');
     lxSize = document.getElementById('lxSize');
