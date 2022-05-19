@@ -139,7 +139,10 @@ function changeCellStatus(event) {
 
 // grid drawing and life in cells
 function drawGrid() {
+    context.rect(0, 0, fieldWidthInPixels, fieldHeightInPixels);
     context.fillStyle = "white";
+    context.fill();
+
     for (let x = 0; x < fieldWidthInPixels; x += cellSideInPixels) {
         context.moveTo(x, 0);
         context.lineTo(x, fieldHeightInPixels);
